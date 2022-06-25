@@ -1,0 +1,63 @@
+/*
+		StringTokenizer tokens= new StringTokenizer(request_line);
+		tokens.nextToken();
+		
+		String file_name=tokens.nextToken();
+		System.out.println("filename: "+file_name);
+		
+		file_name="C:\\Users\\mg352\\OneDrive\\바탕 화면\\컴네\\TCP_WebServer_class\\src"+file_name;
+		
+		boolean file_ex=true;
+		fis=null;
+		//
+		System.out.println("incoming "+request_line);
+		String header_line=null;
+		while((header_line=br.readLine()).length()!=0) {
+			System.out.println(header_line);
+		}
+		
+		
+		//
+		
+		try {
+			fis=new FileInputStream(file_name);
+			
+			String status_line=null;
+			String content_type_line=null;
+			String entity_body=null;
+			if(file_ex) {
+				status_line="HTTP/1.1 200 OK";
+				content_type_line="Content-type: "
+				+contentType(file_name)+CRLF;  
+			}
+			else {
+				status_line="HTTP/1.1 404 Not Found"+CRLF;
+				content_type_line="Content-type: text/html"+CRLF;
+				entity_body="<HTML>"+
+						"<HEAD><TITLE>Not Found</TITLE></HEAD>"+
+						"<BODY>Not Found</BODY></HTML>";
+						
+			}
+
+			dos.writeBytes(status_line);
+			dos.writeBytes(content_type_line);
+			dos.writeBytes(CRLF);
+			
+			if(true) {
+				sendBytes(fis,dos);
+				System.out.println("errorpoint");
+				fis.close();
+			}
+			else {
+				dos.writeBytes(entity_body);
+			}
+			
+		}catch(FileNotFoundException e){
+			file_ex=false;
+		}
+		
+		
+		br.close();
+		dos.close();
+		sock.close();*/
+		

@@ -1,0 +1,11 @@
+recommender_v2.py u1.base u1.test
+recommender_v2.py u2.base u2.test
+recommender_v2.py u3.base u3.test
+recommender_v2.py u4.base u4.test
+recommender_v2.py u5.base u5.test
+
+PA4.exe u1
+PA4.exe u2
+PA4.exe u3
+PA4.exe u4
+PA4.exe u5

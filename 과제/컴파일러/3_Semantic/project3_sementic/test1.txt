@@ -1,0 +1,13 @@
+int xy;
+int gcd(int a,int b)
+{
+}
+void v;
+void main(void)
+{
+	int x[5];
+	void y;
+
+
+}
+void gcd(void){}
